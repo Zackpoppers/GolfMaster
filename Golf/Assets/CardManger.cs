@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class CardManger : MonoBehaviour
 {
@@ -13,4 +14,20 @@ public class CardManger : MonoBehaviour
     {
         
     }
+
+    private List<string> deck = new List<string>();
+
+    private List<string> disacrdPile = new List<string>();
+
+    void ShuffleCard()
+    {
+
+    }
+
+    void Discard()
+    {
+
+    }
+
+    //Card DrawFromDeck() {}
 }
