@@ -1,33 +1,39 @@
-using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class CardManger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    
+
+    public Card card;
+
+    public List<Card> deck = new List<Card>();
+
+    public List<Card> disacrdPile = new List<Card>();
+
+    public void Start()
+    {
+
+    }
+
+    public void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private List<string> deck = new List<string>();
-
-    private List<string> disacrdPile = new List<string>();
-
-    void ShuffleCard()
+    public void ShuffleCard()
     {
 
     }
 
-    void Discard()
+    public void Discard()
     {
 
     }
 
-    //Card DrawFromDeck() {}
+    public Card DrawFromDeck() 
+    {
+        return card;
+    }
 }
